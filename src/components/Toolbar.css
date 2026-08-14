@@ -1,0 +1,13 @@
+.toolbar {
+    background: var(--pico-primary);
+    padding-inline: 1rem;
+}
+
+.toolbar strong {
+    color: var(--pico-primary-inverse);
+}
+
+.toolbar a[role="button"] {
+    margin-bottom: 0;
+    cursor: pointer;
+}
