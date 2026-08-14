@@ -66,9 +66,7 @@ export async function importTableFromExcel<T extends object>(
     throw new Error("La planilla no contiene ninguna hoja");
   }
 
-  const keyByHeader = new Map(
-    columns.map((column) => [column.header, column.key]),
-  );
+  const keyByHeader = new Map(columns.map((column) => [column.header, column.key]));
 
   const records: Partial<T>[] = [];
   const headers: string[] = [];
